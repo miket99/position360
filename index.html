@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Customer Intelligence 360 Introduction</title>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+
+<body>
+	<div id="particles-js">
+		<ul>
+			<li>
+				<a href="#" type ="button" onclick="homeFunction()">
+					<div class="icon">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<i class="fa fa-home" aria-hidden="true"></i>
+					</div>
+					<div class="name"><span data-text="Home">Home</span></div>
+					<script>
+					function homeFunction() {
+						document.getElementById("CI360Cust").style.visibility = "hidden";
+						document.getElementById("picPlan").style.visibility = "hidden";
+						document.getElementById("picListen").style.visibility = "hidden";
+						document.getElementById("picUnderstand").style.visibility = "hidden";
+						document.getElementById("picDecide").style.visibility = "hidden";
+						document.getElementById("picAct").style.visibility = "hidden";
+					}
+					</script>
+				</a>
+			</li>
+			<li>
+				<a href="#" type="button" onclick="customerFunction()">
+					<div class="icon">
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<i class="fa fa-users" aria-hidden="true"></i>
+					</div>
+					<div class="name"><span data-text="Customer">Customer</span></div>
+					<script>
+					function customerFunction() {
+						document.getElementById("CI360Cust").style.visibility = "visible";
+						document.getElementById("picPlan").style.visibility = "hidden";
+						document.getElementById("picListen").style.visibility = "hidden";
+						document.getElementById("picUnderstand").style.visibility = "hidden";
+						document.getElementById("picDecide").style.visibility = "hidden";
+						document.getElementById("picAct").style.visibility = "hidden";
+					}
+					</script>
+				</a>
+			</li>
+			<li>
+				<a href="#" type="button" onclick="planFunction()">
+					<div class="icon">
+						<i class="fa fa-map" aria-hidden="true"></i>
+						<i class="fa fa-map" aria-hidden="true"></i>
+					</div>
+					<div class="name"><span data-text="Plan">Plan</span></div>
+					<script>
+					function planFunction() {
+						document.getElementById("CI360Cust").style.visibility = "hidden";
+						document.getElementById("picPlan").style.visibility = "visible";
+						document.getElementById("picListen").style.visibility = "hidden";
+						document.getElementById("picUnderstand").style.visibility = "hidden";
+						document.getElementById("picDecide").style.visibility = "hidden";
+						document.getElementById("picAct").style.visibility = "hidden";
+					}
+					</script>
+				</a>
+			</li>
+			<li>
+				<a href="#" type="button" onclick="listenFunction()">
+					<div class="icon">
+						<i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+						<i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+					</div>
+					<div class="name"><span data-text="Listen">Listen</span></div>
+					<script>
+					function listenFunction() {
+						document.getElementById("CI360Cust").style.visibility = "hidden";
+						document.getElementById("picPlan").style.visibility = "hidden";
+						document.getElementById("picListen").style.visibility = "visible";
+						document.getElementById("picUnderstand").style.visibility = "hidden";
+						document.getElementById("picDecide").style.visibility = "hidden";
+						document.getElementById("picAct").style.visibility = "hidden";
+					}
+					</script>
+				</a>
+			</li>
+			<li>
+				<a href="#" type="button" onclick="understandFunction()">
+					<div class="icon">
+						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+					</div>
+					<div class="name"><span data-text="Understand">Understand</span></div>
+					<script>
+					function understandFunction() {
+						document.getElementById("CI360Cust").style.visibility = "hidden";
+						document.getElementById("picPlan").style.visibility = "hidden";
+						document.getElementById("picListen").style.visibility = "hidden";
+						document.getElementById("picUnderstand").style.visibility = "visible";
+						document.getElementById("picDecide").style.visibility = "hidden";
+						document.getElementById("picAct").style.visibility = "hidden";
+					}
+					</script>
+				</a>
+			</li>
+			<li>
+				<a href="#" type="button" onclick="decideFunction()">
+					<div class="icon">
+						<i class="fa fa-cogs" aria-hidden="true"></i>
+						<i class="fa fa-cogs" aria-hidden="true"></i>
+					</div>
+					<div class="name"><span data-text="Decide">Decide</span></div>
+					<script>
+					function decideFunction() {
+						document.getElementById("CI360Cust").style.visibility = "hidden";
+						document.getElementById("picPlan").style.visibility = "hidden";
+						document.getElementById("picListen").style.visibility = "hidden";
+						document.getElementById("picUnderstand").style.visibility = "hidden";
+						document.getElementById("picDecide").style.visibility = "visible";
+						document.getElementById("picAct").style.visibility = "hidden";
+					}
+					</script>
+				</a>
+			</li>
+			<li>
+				<a href="#" type="button" onclick="actFunction()">
+					<div class="icon">
+						<i class="fa fa-crosshairs" aria-hidden="true"></i>
+						<i class="fa fa-crosshairs" aria-hidden="true"></i>
+					</div>
+					<div class="name"><span data-text="Act">Act</span></div>
+					<script>
+					function actFunction() {
+						document.getElementById("CI360Cust").style.visibility = "hidden";
+						document.getElementById("picPlan").style.visibility = "hidden";
+						document.getElementById("picListen").style.visibility = "hidden";
+						document.getElementById("picUnderstand").style.visibility = "hidden";
+						document.getElementById("picDecide").style.visibility = "hidden";
+						document.getElementById("picAct").style.visibility = "visible";
+					}
+					</script>
+				</a>
+			</li>
+		</ul>
+		<div id="CI360Cust" style="visibility:hidden">
+			<div class="wrapper">
+				<div class="cust">
+						<img src="images/user-xxl.png" alt="">
+				</div>
+					<div class="div-one">
+						<div class="plan">
+								<img src="images/plan.png" alt"">
+						</div>
+					</div>
+					<div class="div-two">
+						<div class="listen">
+								<img src="images/listen.png" alt"">
+						</div>
+					</div>
+					<div class="div-three">
+						<div class="understand">
+								<img src="images/understand.png" alt"">
+						</div>
+					</div>
+					<div class="div-four">
+						<div class="decide">
+								<img src="images/decide.png" alt"">
+						</div>
+					</div>
+					<div class="div-five">
+						<div class="act">
+								<img src="images/act.png" alt"">
+						</div>
+					</div>
+			</div>
+		</div>
+			<div id="CI360Plan" style="visibility:hidden">
+			 <img src="images\CI360_Plan.png" alt="Customer Centric View" height="600" width="687" id="picPlan">
+			</div>
+		<div id="CI360Listen" style="visibility:hidden">
+			 <img src="images\CI360_Listen.png" alt="Customer Centric View" height="600" width="742" id="picListen">
+		</div>
+		<div id="CI360Understand" style="visibility:hidden">
+			 <img src="images\CI360_Understand.png" alt="Customer Centric View" height="600" width="675" id="picUnderstand">
+		</div>
+		<div id="CI360Decide" style="visibility:hidden">
+			 <img src="images\CI360_Decide.png" alt="Customer Centric View" height="600" width="683" id="picDecide">
+		</div>
+		<div id="CI360Act" style="visibility:hidden">
+			 <img src="images\CI360_Act.png" alt="Customer Centric View" height="600" width="446" id="picAct">
+		</div>
+		<div id="Logo">
+			<img src ="images\SASLogo.png" alt="SAS Logo" height="60" width ="139">
+		</div>
+	</div>
+	<script
+			Src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
+	</script>
+	<script>
+			particlesJS.load('particles-js', 'particles.json', function(){
+			console.log('particles.json loaded...');
+		});
+	</script>
+</body>
+</html>

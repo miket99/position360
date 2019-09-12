@@ -1,0 +1,303 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	font-family: sans-serif;
+}
+
+.wrapper{
+	position:relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 800px;
+	width: 800px;
+}
+
+.cust{
+	position:absolute;
+	height: 10%;
+	width: 10%;
+	z-index: 2;
+}
+
+.cust img{
+	width: 100%;
+}
+
+.div-one{
+	padding: 20px;
+	position:absolute;
+	height:40%;
+	width: 40%;
+	z-index: 1;
+	animation: animate 15s  linear infinite;
+}
+
+.plan{
+	height:35%;
+	width: 35%;
+	margin: 0 auto;
+	animation: animate 15s linear infinite;
+	}
+
+.plan img{
+	width: 100%
+}
+@keyframes animate{
+
+	0%{
+			transform: rotate(0deg);
+	}
+	100%{
+			transform: rotate(360deg);
+	}
+}
+.div-two{
+	padding: 20px;
+	position:absolute;
+	height: 65%;
+	width: 65%;
+	z-index: 1;
+	animation: animate1 10s linear infinite
+}
+
+.listen{
+	height:20%;
+	width: 20%;
+	margin: 0 auto;
+	animation: animate1 10s linear infinite;
+}
+
+.listen img{
+	width: 100%
+}
+@keyframes animate1{
+
+	0%{
+			transform: rotate(90deg);
+	}
+	100%{
+			transform: rotate(450deg);
+	}
+}
+.div-three{
+	padding: 20px;
+	position:absolute;
+	height: 65%;
+	width: 65%;
+	z-index: 1;
+	animation: animate2 10s linear infinite
+}
+
+.understand{
+	height:20%;
+	width: 20%;
+	margin: 0 auto;
+	animation: animate2 10s linear infinite;
+}
+
+.understand img{
+	width: 100%
+}
+@keyframes animate2{
+
+	0%{
+			transform: rotate(180deg);
+	}
+	100%{
+			transform: rotate(540deg);
+	}
+}
+ .div-four{
+	padding: 20px;
+	position:absolute;
+	height: 65%;
+	width: 65%;
+	z-index: 1;
+	animation: animate3 10s linear infinite
+}
+
+.decide{
+	height:20%;
+	width: 20%;
+	margin: 0 auto;
+	animation: animate3 10s linear infinite;
+}
+
+.decide img{
+	width: 100%
+}
+@keyframes animate3{
+
+	0%{
+			transform: rotate(270deg);
+	}
+	100%{
+			transform: rotate(630deg);
+	}
+}.div-five{
+	padding: 20px;
+	position:absolute;
+	height: 65%;
+	width: 65%;
+	z-index: 1;
+	animation: animate4 10s linear infinite
+}
+
+.act{
+	height:20%;
+	width: 20%;
+	margin: 0 auto;
+	animation: animate4 10s linear infinite;
+}
+
+.act img{
+	width: 100%
+}
+@keyframes animate4{
+
+	0%{
+			transform: rotate(0deg);
+	}
+	100%{
+			transform: rotate(360deg);
+	}
+}
+#particles-js{
+	background:#3279A8;
+	height: 100vh;
+}
+#CI360Cust{
+	height: 100vh;
+	opacity: 0.9;
+	position: fixed;
+  top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+}
+#CI360Plan{
+	opacity: 0.9;
+	position: fixed;
+  top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+}
+#CI360Listen{
+	opacity: 0.9;
+	position: fixed;
+  top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+}
+#CI360Understand{
+	opacity: 0.9;
+	position: fixed;
+  top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+}
+#CI360Decide{
+	opacity: 0.9;
+	position: fixed;
+  top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+}
+#CI360Act{
+	opacity: 0.9;
+	position: fixed;
+  top: 50%;
+  left: 45%;
+	transform: translate(-50%, -50%);
+}
+#Logo{
+	opacity: 0.9;
+	position: fixed;
+	top: 95%;
+	Left: 95%;
+	transform: translate(-50%, -50%);
+}
+ul{
+	position:absolute;
+	z-index: 1;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 20px 0;
+	background: #fff;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+ul li{
+	list-style: none;
+	text-align: center;
+	display: block;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+ul li:last-child{
+	border-right: none;
+}
+ul li a{
+	text-decoration: none;
+	padding: 0 50px;
+	display: block;
+}
+ul li a .icon{
+	width: 40px;
+	height: 34px;
+	text-align: center;
+	/* background: #ccc;*/
+	overflow: hidden;
+	margin: 0 auto 10px;
+}
+ul li a .icon .fa{
+	width: 100%;
+	height: 100%
+	line-height: 40px;
+	font-size: 34px;
+	transition: 0.5s;
+	color: #000;
+}
+ul li a:hover .icon .fa{
+	transform: translateY(-100%);
+}
+ul li a:hover .icon .fa:last-child{
+	color: #3279A8;
+}
+ul li a .name{
+	position:relative;
+	height: 20px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+ul li a .name span{
+	display: block;
+	position: relative;
+	color: #000;
+	font-size: 18px;
+	line-height: 20px;
+	transition: 0.5s;
+}
+ul li a .name span:before{
+	content: attr(data-text);
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color:#3279A8;
+}
+ul li a:hover .name span{
+	transform: translateY(20px);
+}
